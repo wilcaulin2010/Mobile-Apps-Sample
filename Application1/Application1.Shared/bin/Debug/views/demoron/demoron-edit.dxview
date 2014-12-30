@@ -1,0 +1,23 @@
+
+<div data-options="dxView : { name: 'DemoRonEdit', mode: 'edit', title: 'Demo ron' } " >
+    <div data-bind="dxCommand: { action: handleSave, id: 'save', title: 'Save', icon: 'save' } "></div>
+    <div data-bind="dxCommand: { action: '#_back', id: 'cancel', behavior: 'back', title: 'Cancel', icon: 'close' }" ></div>
+    <div data-options="dxContent : { targetPlaceholder: 'content' } " >
+        <div data-bind="dxScrollView: { }">
+            <div class="dx-fieldset">
+                <div class="dx-field">
+                    <div class="dx-field-label">Name id: </div>
+                    <div class="dx-field-value" data-bind="dxNumberBox: { value: demoron.NameId, readOnly: true }"></div>
+                </div>
+                <div class="dx-field">
+                    <div class="dx-field-label">First name: </div>
+                    <div class="dx-field-value" data-bind="dxTextBox: { value: demoron.FirstName, placeholder: 'Enter First name' }"></div>
+                </div>
+                <div class="dx-field">
+                    <div class="dx-field-label">Last name: </div>
+                    <div class="dx-field-value" data-bind="dxTextBox: { value: demoron.LastName, placeholder: 'Enter Last name' }"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

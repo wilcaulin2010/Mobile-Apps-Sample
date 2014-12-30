@@ -1,0 +1,14 @@
+
+<div data-options="dxView : { name: 'DemoRons', title: 'Demo Rons', targetFrame: 'navigation' } " >
+    <div data-bind="dxCommand: { action: '#DemoRonEdit', direction: 'none', id: 'create', title: 'Add', icon: 'plus' }"></div>
+    <div  data-options="dxContent : { targetPlaceholder: 'content' } " >             
+        <div data-bind="dxList: { dataSource: dataSource, pullRefreshEnabled: true }">
+          <div data-bind="dxAction: '#DemoRonDetails/{NameId}'" data-options="dxTemplate : { name: 'item' } " >
+<!--
+                <img height="55" style="padding: 10px; float:left;" data-bind="attr: { src: imageUrlPropertyName }" />
+-->
+                <div class="list-item" data-bind="text: FirstName"></div>
+          </div>                  
+        </div>
+    </div>
+</div>

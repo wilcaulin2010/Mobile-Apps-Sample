@@ -1,0 +1,25 @@
+
+<div data-options="dxView : { name: 'DemoRonDetails', title: 'Demo ron' } " >
+    <div data-bind="dxCommand: { action: '#DemoRonEdit/{id}', direction: 'none', id: 'edit', title: 'Edit', icon: 'edit' }"></div>
+    <div data-bind="dxCommand: { action: handleDelete, id: 'delete', title: 'Delete', icon: 'remove' }"></div>
+    <div  data-options="dxContent : { targetPlaceholder: 'content' } " >
+        <div data-bind="dxScrollView: { }">
+            <h2 data-bind="text: demoron.FirstName"></h2>
+            <div class="dx-fieldset">
+                <div class="dx-field">
+                    <div class="dx-field-label">Name id</div>
+                    <div class="dx-field-value" data-bind="text: demoron.NameId"></div>
+                </div>
+                <div class="dx-field">
+                    <div class="dx-field-label">First name</div>
+                    <div class="dx-field-value" data-bind="text: demoron.FirstName"></div>
+                </div>
+                <div class="dx-field">
+                    <div class="dx-field-label">Last name</div>
+                    <div class="dx-field-value" data-bind="text: demoron.LastName"></div>
+                </div>
+			</div>
+            <div data-options="dxContentPlaceholder : { name: 'view-footer', transition: 'none' } " ></div>
+        </div>
+    </div>
+</div>
